@@ -14,14 +14,14 @@ app.listen(7000, () => {
    app.get('/', (req , res) => {
      res.send('Welcome Home')
    })
-
+//EX1--------------------------------------------------------
   app.get('/greet/:name', (req, res) => {
    const name = req.params.name;
 
      res.send(`<h1>Hello there, ${name}!</h1>`);
    });
 
-
+//EX2-----------------------------------------------------
    app.get('/roll/:num', (req, res) => {
      const num = req.params.num;
       if(isNaN(num)){
@@ -37,7 +37,7 @@ app.listen(7000, () => {
 
 
 
-
+//EX3---------------------------------------------------------------
   
 
      const collectibles = [
@@ -68,7 +68,7 @@ app.listen(7000, () => {
    
         });
 
-
+//EX4-----------------------------------------------------------
         const shoes = [
             { name: "Birkenstocks", price: 50, type: "sandal" },
             { name: "Air Jordans", price: 500, type: "sneaker" },
